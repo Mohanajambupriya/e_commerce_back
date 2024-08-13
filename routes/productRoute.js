@@ -4,8 +4,8 @@ const router=express.Router();
 const auth = require('../middlewere/auth')
 
 
-router.get('/',auth ,productController.getProducts)
-router.post('/',auth ,productController.createProducts)
-router.delete('/',auth ,productController.deleteProducts)
+router.get('/', productController.getProducts)
+router.post('/', productController.createProducts)
+router.delete('/',productController.deleteProducts)
 
 module.exports=router
