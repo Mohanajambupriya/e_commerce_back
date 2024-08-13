@@ -7,7 +7,7 @@ const cartRoutes= require('./routes/cartRoute');
 const orderRoutes=require('./routes/orderRoute');
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://mohanapriyaj2022ece:Mohanapriya@cluster0.10aqqxp.mongodb.net/e_commerce').then(()=>{
+mongoose.connect('mongodb://localhost:27017/e_commerce').then(()=>{
     console.log("connected to database");
 });
 

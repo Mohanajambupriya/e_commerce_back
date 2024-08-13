@@ -1,4 +1,5 @@
 const mongoose=require("mongoose");
+
 const orderSchema=new mongoose.Schema({
     user_id:String,
     customerName:String,
@@ -22,5 +23,6 @@ const orderSchema=new mongoose.Schema({
         }
     }
 })
+
 const order=mongoose.model("order",orderSchema);
 module.exports=order;
